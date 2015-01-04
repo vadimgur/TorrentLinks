@@ -133,6 +133,8 @@ public class LinksDisplayActivity extends ActionBarActivity implements ResultCli
             row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.FILL_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
             TextView textView = new TextView(this);
             textView.setText(link.getText());
+            textView.setHeight(80);
+//            textView.setTextSize();
             row.addView(textView);
             tableLayout.addView(row);
         }
